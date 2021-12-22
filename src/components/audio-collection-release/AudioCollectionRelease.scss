@@ -1,0 +1,75 @@
+@import '../../design-tokens/scss-variables';
+
+.audio-collection-release {
+	width: 30%;
+	text-transform: uppercase;
+
+	@media (max-width: 992px) {
+		width: 45%;
+	}
+
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+
+	&-img {
+		margin-bottom: $spacer-md;
+		border: 1px solid $color-pink;
+		position: relative;
+
+		&:hover {
+			.img-overlay {
+				background-color: initial;
+			}
+		}
+
+		.img-overlay {
+			width: 100%;
+			height: 100%;
+			background-color: transparentize($color-black, 0.2);
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: background-color 0.3s;
+
+			@media (max-width: 992px) {
+				display: none;
+			}
+		}
+	}
+
+	&-info {
+		text-align: center;
+	}
+
+	&-btn {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.audio-collection-release:nth-child(2) {
+	margin-bottom: $spacer-lg * 5;
+}
+
+.audio-collection-release:nth-child(3) {
+	@media (max-width: 768px) {
+		margin-bottom: $spacer-lg * 5;
+	}
+}
+
+.audio-collection-release:nth-child(4) {
+	margin-bottom: $spacer-lg * 5;
+}
+
+.audio-collection-release:nth-child(5) {
+	@media (max-width: 768px) {
+		margin-bottom: $spacer-lg * 5;
+	}
+}
+
+.audio-collection-release:nth-child(6) {
+	@media (max-width: 768px) {
+		margin-bottom: $spacer-lg * 5;
+	}
+}

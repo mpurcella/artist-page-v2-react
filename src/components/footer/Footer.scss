@@ -1,0 +1,21 @@
+@import '../../design-tokens/scss-variables';
+
+.footer {
+	width: 100%;
+	background-color: $color-black;
+	padding: $spacer-md $spacer-md;
+	box-sizing: border-box;
+
+	&-subscribe {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: $spacer-lg * 3;
+	}
+
+	&-nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+}

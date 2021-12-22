@@ -1,0 +1,75 @@
+@import '../../design-tokens/scss-variables';
+
+.nav-social {
+	&-list {
+		display: flex;
+	}
+
+	&-link {
+		display: flex;
+		align-items: center;
+		transition: all 0.3s;
+	}
+}
+
+.header-nav {
+	.nav-social-item {
+		margin: 0 $spacer-xs;
+
+		@media (max-width: 992px) {
+			margin: 0 $spacer-md;
+		}
+	}
+
+	.nav-social-link {
+		font-size: $size-xxl;
+		color: $color-grey;
+
+		&:hover {
+			color: $color-white;
+		}
+
+		@media (max-width: 1200px) {
+			font-size: $size-xl;
+		}
+
+		@media (max-width: 992px) {
+			font-size: $size-xxl;
+		}
+
+		@media (max-width: 576px) {
+			font-size: $size-xl;
+		}
+
+		@media (max-width: 320px) {
+			font-size: $size-lg;
+		}
+	}
+}
+
+.footer {
+	.nav-social-item {
+		margin-left: $spacer-lg;
+
+		@media (max-width: 992px) {
+			margin-left: $spacer-md;
+		}
+	}
+
+	.nav-social-link {
+		font-size: $size-md;
+		color: $color-dark-grey;
+
+		&:hover {
+			color: $color-white;
+		}
+
+		@media (max-width: 768px) {
+			font-size: $size-sm;
+		}
+
+		@media (max-width: 320px) {
+			font-size: $size-xs;
+		}
+	}
+}

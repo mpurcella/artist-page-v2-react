@@ -1,0 +1,69 @@
+@import '../../design-tokens/scss-variables';
+
+.heading {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	color: $color-white;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.subscribe-heading {
+	font-size: $size-xl * 2;
+	margin-bottom: $spacer-xl * 2.5;
+
+	@media (max-width: 1200px) {
+		font-size: $size-xl * 1.75;
+	}
+
+	@media (max-width: 768px) {
+		font-size: $size-xl * 1.5;
+	}
+
+	@media (max-width: 576px) {
+		font-size: $size-xl * 1.25;
+	}
+}
+
+.store-heading {
+	font-size: $size-xl * 4;
+
+	@media (max-width: 1200px) {
+		font-size: $size-xl * 3;
+	}
+
+	@media (max-width: 768px) {
+		font-size: $size-xl * 2;
+	}
+
+	@media (max-width: 576px) {
+		font-size: $size-xl * 1.5;
+	}
+}
+
+.audio-collection-heading {
+	font-size: $size-xl * 2;
+	margin-bottom: $spacer-xl * 2.5;
+
+	@media (max-width: 576px) {
+		font-size: $size-xl * 1.75;
+	}
+
+	@media (max-width: 320px) {
+		font-size: $size-xl * 1.5;
+	}
+}
+
+.video-collection-heading {
+	font-size: $size-xl * 2;
+	margin-bottom: $spacer-xl * 2.5;
+
+	@media (max-width: 576px) {
+		font-size: $size-xl * 1.75;
+	}
+
+	@media (max-width: 320px) {
+		font-size: $size-xl * 1.5;
+	}
+}

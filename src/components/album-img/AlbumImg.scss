@@ -1,0 +1,10 @@
+@import '../../design-tokens/scss-variables';
+
+.album-img {
+	width: 100%;
+}
+
+.home-img {
+	box-shadow: -5px 0px 10px -5px $color-pink, 0px -10px 10px -10px $color-pink, 5px 0px 10px -5px $color-pink,
+		0px 5px 10px -5px $color-pink;
+}

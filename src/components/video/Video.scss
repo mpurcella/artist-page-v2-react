@@ -1,0 +1,18 @@
+@import '../../design-tokens/scss-variables';
+
+.video {
+	width: 838px;
+	height: 472px;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid $color-pink;
+	box-sizing: border-box;
+
+	@media (max-width: 992px) {
+		width: 100%;
+	}
+
+	@media (max-width: 576px) {
+		height: 320px;
+	}
+}

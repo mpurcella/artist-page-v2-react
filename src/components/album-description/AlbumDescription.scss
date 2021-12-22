@@ -1,0 +1,51 @@
+@import '../../design-tokens/scss-variables';
+
+.album-description {
+	font-weight: 200;
+	margin-bottom: $spacer-xxl;
+	line-height: 1.5;
+}
+
+.home-description {
+	font-size: $size-xl;
+
+	@media (max-width: 1200px) {
+		font-size: $size-lg;
+	}
+
+	@media (max-width: 992px) {
+		font-size: $size-xl;
+	}
+
+	@media (max-width: 768px) {
+		font-size: $size-lg;
+	}
+
+	@media (max-width: 576px) {
+		font-size: $size-md;
+	}
+}
+
+.audio-collection-description {
+	font-size: $size-lg;
+
+	@media (max-width: 1200px) {
+		font-size: $size-md;
+	}
+
+	@media (max-width: 992px) {
+		font-size: $size-lg;
+	}
+
+	@media (max-width: 768px) {
+		font-size: $size-xl;
+	}
+
+	@media (max-width: 576px) {
+		font-size: $size-lg;
+	}
+
+	@media (max-width: 320px) {
+		font-size: $size-md;
+	}
+}

@@ -1,0 +1,30 @@
+@import '../../design-tokens/scss-variables';
+
+.store {
+	height: calc(100vh - 142.88px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: $spacer-xl $spacer-md;
+	box-sizing: border-box;
+
+	@media (max-width: 1200px) {
+		height: calc(100vh - 135.06px);
+	}
+
+	@media (max-width: 992px) {
+		height: calc(100vh - 127.25px);
+	}
+
+	@media (max-width: 768px) {
+		height: calc(100vh - 121.34px);
+	}
+
+	@media (max-width: 576px) {
+		height: calc(100vh - 119px);
+	}
+
+	@media (max-width: 320px) {
+		height: calc(100vh - 117px);
+	}
+}

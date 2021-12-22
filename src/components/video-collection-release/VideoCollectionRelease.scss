@@ -1,0 +1,22 @@
+@import '../../design-tokens/scss-variables';
+
+.video-collection-release {
+	margin-bottom: $spacer-lg * 6;
+
+	@media (max-width: 320px) {
+		margin-bottom: $spacer-lg * 4;
+	}
+
+	&-video {
+		margin-bottom: $spacer-md;
+	}
+
+	&-info {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.video-collection-release:last-child {
+	margin-bottom: 0;
+}

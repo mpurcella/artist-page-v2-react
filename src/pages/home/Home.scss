@@ -1,0 +1,77 @@
+@import '../../design-tokens/scss-variables';
+
+.album-release {
+	height: calc(100vh - 94.88px);
+	padding: $spacer-xl $spacer-md;
+	box-sizing: border-box;
+
+	@media (max-width: 1200px) {
+		height: calc(100vh - 87.06px);
+	}
+
+	@media (max-width: 992px) {
+		height: calc(100vh - 79.25px);
+	}
+
+	@media (max-width: 768px) {
+		height: calc(100vh - 75.34px);
+	}
+
+	@media (max-width: 576px) {
+		height: calc(100vh - 73px);
+	}
+
+	&-container {
+		height: 100%;
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 992px) {
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	&-info {
+		width: 100%;
+		text-transform: uppercase;
+		letter-spacing: 1.25px;
+		text-align: center;
+
+		@media (max-width: 992px) {
+			order: 2;
+		}
+
+		.album-links {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	&-img {
+		width: 100%;
+
+		@media (max-width: 992px) {
+			margin-bottom: $spacer-xl * 2;
+			order: 1;
+		}
+
+		.album-img-container {
+			width: 85%;
+			margin: 0 auto;
+
+			@media (max-width: 1200px) {
+				width: 90%;
+			}
+
+			@media (max-width: 992px) {
+				width: 60%;
+				min-width: 250px;
+			}
+
+			@media (max-width: 768px) {
+				width: 80%;
+			}
+		}
+	}
+}

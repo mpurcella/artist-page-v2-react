@@ -1,0 +1,53 @@
+@import '../../../design-tokens/scss-variables';
+
+.contact-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.first-name-input-container,
+	.last-name-input-container,
+	.email-input-container,
+	.subject-input-container,
+	.message-input-container {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: $spacer-xxl;
+
+		@media (max-width: 576px) {
+			margin-bottom: $spacer-xl;
+		}
+	}
+
+	.first-name-input-container,
+	.last-name-input-container,
+	.email-input-container,
+	.subject-input-container {
+		width: 49%;
+
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+
+	.message-input-container {
+		width: 100%;
+	}
+
+	.label-required {
+		font-size: $size-xs;
+		font-weight: 700;
+		color: $color-pink;
+		margin-left: $spacer-xxs;
+
+		@media (max-width: 1200px) {
+			font-size: $size-xxs;
+		}
+	}
+
+	&-submit-btn {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,12 @@
+@import '../../design-tokens/scss-variables';
+
+.copyright {
+	font-size: $size-sm;
+	color: $color-dark-grey;
+	font-weight: 200;
+	text-transform: uppercase;
+
+	@media (max-width: 768px) {
+		font-size: $size-xs;
+	}
+}
