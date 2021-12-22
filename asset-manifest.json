@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/artist-page-v2-react/static/css/main.1fda1763.css",
+    "main.js": "/artist-page-v2-react/static/js/main.ab250899.js",
+    "static/media/album-cover.png": "/artist-page-v2-react/static/media/album-cover.c9264f6e5baf823f3ba1.png",
+    "static/media/album-cover-3.png": "/artist-page-v2-react/static/media/album-cover-3.7d60949b9544b85bc1cd.png",
+    "static/media/album-cover-5.png": "/artist-page-v2-react/static/media/album-cover-5.8c369dba00ab55ddac32.png",
+    "static/media/album-cover-6.png": "/artist-page-v2-react/static/media/album-cover-6.eb2f2ed723a1f651edf6.png",
+    "static/media/album-cover-2.png": "/artist-page-v2-react/static/media/album-cover-2.1b3b78a33928fb079cde.png",
+    "static/media/album-cover-4.png": "/artist-page-v2-react/static/media/album-cover-4.0001ac6d5958c0bed66c.png",
+    "static/media/street.jpeg": "/artist-page-v2-react/static/media/street.02b8d55623d2c6e46c89.jpeg",
+    "static/media/artist-logo.png": "/artist-page-v2-react/static/media/artist-logo.473645f7a865a12bbbbe.png",
+    "index.html": "/artist-page-v2-react/index.html",
+    "main.1fda1763.css.map": "/artist-page-v2-react/static/css/main.1fda1763.css.map",
+    "main.ab250899.js.map": "/artist-page-v2-react/static/js/main.ab250899.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fda1763.css",
+    "static/js/main.ab250899.js"
+  ]
+}
