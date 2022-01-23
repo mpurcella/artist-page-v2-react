@@ -1,11 +1,14 @@
 @import '../../design-tokens/scss-variables';
 
 .btn-link {
+	font-size: $size-lg;
 	text-transform: uppercase;
 	text-decoration: none;
-	text-align: center;
 	color: $color-pink;
-	background-color: transparent;
+	letter-spacing: 1.25px;
+	line-height: normal;
+	text-align: center;
+	padding: $spacer-sm $spacer-xxl;
 	border: 1px solid $color-pink;
 	box-sizing: border-box;
 	transition: all 0.3s;
@@ -14,32 +17,20 @@
 		color: $color-white;
 		background-color: $color-pink;
 	}
-}
-
-.btn-link-primary,
-.btn-link-secondary,
-.btn-link-tertiary {
-	font-size: $size-md;
-	padding: $spacer-sm $spacer-xxl;
-	box-sizing: border-box;
 
 	@media (max-width: 1200px) {
-		font-size: $size-sm;
+		font-size: $size-md;
+	}
+
+	@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+		font-size: $size-lg;
 	}
 
 	@media (max-width: 992px) {
 		font-size: $size-md;
 	}
 
-	@media (max-width: 768px) {
-		font-size: $size-sm;
-	}
-
 	@media (max-width: 576px) {
-		font-size: $size-md;
-	}
-
-	@media (max-width: 320px) {
 		font-size: $size-sm;
 	}
 }
@@ -48,6 +39,6 @@
 	margin: 0 $spacer-xs;
 }
 
-.btn-link-secondary {
+.btn-link-tertiary {
 	width: 100%;
 }

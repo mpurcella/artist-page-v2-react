@@ -1,5 +1,4 @@
 import React from 'react';
-import Subscribe from '../../components/subscribe/Subscribe';
 import { albumTitleData } from '../../components/album-title/AlbumTitleData';
 import { albumDescriptionData } from '../../components/album-description/AlbumDescriptionData';
 import { buttonLinkData } from '../../components/button-link/ButtonLinkData';
@@ -10,6 +9,11 @@ import AlbumDescription from '../../components/album-description/AlbumDescriptio
 import ButtonLink from '../../components/button-link/ButtonLink';
 import AlbumImg from '../../components/album-img/AlbumImg';
 import './Home.scss';
+import About from '../../components/about/About';
+import Heading from '../../components/heading/Heading';
+import { merchHeadingData } from '../../components/heading/HeadingData';
+import Products from '../../components/products/Products';
+import { homeProductsListData } from '../../components/products-list/HomeProductsListData';
 
 let Home = () => {
 	return (
@@ -18,14 +22,18 @@ let Home = () => {
 				<Wrapper>
 					<div className='album-release-container'>
 						<div className='album-release-info'>
-							<AlbumTitle
-								albumTitleClassName='album-title home-title'
-								albumTitleValue={albumTitleData[0].value}
-							/>
-							<AlbumDescription
-								albumDescriptionClassName='album-description home-description'
-								albumDescriptionValue={albumDescriptionData[0].value}
-							/>
+							<div className='album-release-title'>
+								<AlbumTitle
+									albumTitleClassName='album-title home-title'
+									albumTitleValue={albumTitleData.value}
+								/>
+							</div>
+							<div className='album-release-description'>
+								<AlbumDescription
+									albumDescriptionClassName='album-description home-description'
+									albumDescriptionValue={albumDescriptionData.value}
+								/>
+							</div>
 							<div className='album-links'>
 								<ButtonLink
 									btnLinkClassName={buttonLinkData[0].className}
@@ -43,15 +51,42 @@ let Home = () => {
 							<div className='album-img-container'>
 								<AlbumImg
 									albumImgClassName='album-img home-img'
-									albumImgSrc={albumImgData[0].src}
-									albumImgAlt={albumImgData[0].alt}
+									albumImgSrc={albumImgData.src}
+									albumImgAlt={albumImgData.alt}
 								/>
 							</div>
 						</div>
 					</div>
 				</Wrapper>
 			</div>
-			<Subscribe />
+			<div className='about'>
+				<Wrapper>
+					<About />
+				</Wrapper>
+			</div>
+			<div className='merch'>
+				<Wrapper>
+					<div className='merch-container'>
+						<div className='merch-heading'>
+							<Heading
+								headingClassName={merchHeadingData.className}
+								headingValue={merchHeadingData.value}
+							/>
+						</div>
+						<div className='home-products'>
+							<Products
+								productListData={homeProductsListData}
+								productsList={'products-list home-products-list'}
+								productsListItem={'products-list-item home-products-list-item'}
+								productsListItemInfo={'products-list-item-info home-products-list-item-info'}
+								productsName={'products-name home-products-name'}
+								productsDescription={'products-description home-products-description'}
+								productsPrice={'products-price home-products-price'}
+							/>
+						</div>
+					</div>
+				</Wrapper>
+			</div>
 		</main>
 	);
 };

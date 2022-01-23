@@ -2,38 +2,46 @@
 
 .album-title {
 	font-weight: 700;
-	margin-bottom: $spacer-xl;
+	letter-spacing: 1.25px;
 }
 
 .home-title {
 	font-size: $size-xl * 2.5;
 
 	@media (max-width: 1200px) {
-		font-size: $size-xl * 2;
-	}
-
-	@media (max-width: 992px) {
 		font-size: $size-xl * 2.25;
 	}
 
+	@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+		font-size: $size-xl * 3.25;
+	}
+
+	@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+		font-size: $size-xl * 3;
+	}
+
+	@media (max-width: 992px) {
+		font-size: $size-xl * 2.5;
+	}
+
 	@media (max-width: 768px) {
-		font-size: $size-xl * 2;
+		font-size: $size-xl * 2.25;
 	}
 
 	@media (max-width: 576px) {
-		font-size: $size-xl * 1.5;
+		font-size: $size-xl * 2;
 	}
 
 	@media (max-width: 320px) {
-		font-size: $size-xl * 1.25;
+		font-size: $size-xl * 1.75;
 	}
 }
 
 .media-title {
-	font-size: $size-xl * 1.5;
+	font-size: $size-xl * 2.25;
 
 	@media (max-width: 1200px) {
-		font-size: $size-xl * 1.25;
+		font-size: $size-xl * 2;
 	}
 
 	@media (max-width: 992px) {

@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Logo.scss';
 
-let Logo = ({ logoClassName, logoSrc, closeNavMenu }) => {
+let Logo = ({ logoClassName, logoSrc, logoAlt }) => {
 	return (
-		<Link to='/' onClick={closeNavMenu}>
-			<img className={logoClassName} src={logoSrc} alt='' />
-		</Link>
+		<>
+			<img className={logoClassName} src={logoSrc} alt={logoAlt} />
+		</>
 	);
 };
 

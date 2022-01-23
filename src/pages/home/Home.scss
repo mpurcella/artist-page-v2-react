@@ -1,30 +1,25 @@
 @import '../../design-tokens/scss-variables';
 
 .album-release {
-	height: calc(100vh - 94.88px);
-	padding: $spacer-xl $spacer-md;
+	min-height: calc(100vh - 67.34px);
+	display: flex;
+	align-items: center;
+	padding: $spacer-xl * 3 $spacer-md;
 	box-sizing: border-box;
 
-	@media (max-width: 1200px) {
-		height: calc(100vh - 87.06px);
-	}
-
-	@media (max-width: 992px) {
-		height: calc(100vh - 79.25px);
-	}
-
-	@media (max-width: 768px) {
-		height: calc(100vh - 75.34px);
-	}
-
 	@media (max-width: 576px) {
-		height: calc(100vh - 73px);
+		min-height: unset;
 	}
 
 	&-container {
 		height: 100%;
 		display: flex;
 		align-items: center;
+
+		@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+			flex-direction: column;
+			justify-content: center;
+		}
 
 		@media (max-width: 992px) {
 			flex-direction: column;
@@ -33,13 +28,26 @@
 	}
 
 	&-info {
-		width: 100%;
+		width: 50%;
 		text-transform: uppercase;
-		letter-spacing: 1.25px;
 		text-align: center;
 
-		@media (max-width: 992px) {
+		@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+			width: 100%;
 			order: 2;
+		}
+
+		@media (max-width: 992px) {
+			width: 100%;
+			order: 2;
+		}
+
+		.album-release-title {
+			margin-bottom: $spacer-xl;
+		}
+
+		.album-release-description {
+			margin-bottom: $spacer-xxl;
 		}
 
 		.album-links {
@@ -49,9 +57,16 @@
 	}
 
 	&-img {
-		width: 100%;
+		width: 50%;
+
+		@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+			width: 100%;
+			margin-bottom: $spacer-xl * 2;
+			order: 1;
+		}
 
 		@media (max-width: 992px) {
+			width: 100%;
 			margin-bottom: $spacer-xl * 2;
 			order: 1;
 		}
@@ -60,18 +75,48 @@
 			width: 85%;
 			margin: 0 auto;
 
-			@media (max-width: 1200px) {
-				width: 90%;
+			@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+				width: 70%;
 			}
 
 			@media (max-width: 992px) {
-				width: 60%;
-				min-width: 250px;
+				width: 70%;
 			}
 
 			@media (max-width: 768px) {
-				width: 80%;
+				width: 85%;
+			}
+
+			@media (max-width: 576px) {
+				width: 90%;
 			}
 		}
+	}
+}
+
+.about {
+	background-color: $color-trans-black;
+	padding: $spacer-xl * 4 $spacer-md;
+
+	@media (max-width: 576px) {
+		padding: $spacer-xl * 2 $spacer-md;
+	}
+}
+
+.merch {
+	padding: $spacer-xl * 4 $spacer-md;
+
+	@media (max-width: 576px) {
+		padding: $spacer-xl * 2 $spacer-md;
+	}
+
+	&-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&-heading {
+		margin-bottom: $spacer-xl * 2.5;
 	}
 }

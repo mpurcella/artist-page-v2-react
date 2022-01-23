@@ -1,9 +1,9 @@
 @import '../../design-tokens/scss-variables';
 
 .album-description {
-	font-weight: 200;
-	margin-bottom: $spacer-xxl;
-	line-height: 1.5;
+	font-weight: 100;
+	letter-spacing: 1.25px;
+	line-height: 1.75;
 }
 
 .home-description {
@@ -11,6 +11,14 @@
 
 	@media (max-width: 1200px) {
 		font-size: $size-lg;
+	}
+
+	@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+		font-size: $size-xl * 1.3;
+	}
+
+	@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+		font-size: $size-xxxl;
 	}
 
 	@media (max-width: 992px) {
@@ -24,17 +32,21 @@
 	@media (max-width: 576px) {
 		font-size: $size-md;
 	}
+
+	@media (max-width: 320px) {
+		font-size: $size-sm;
+	}
 }
 
 .audio-collection-description {
-	font-size: $size-lg;
+	font-size: $size-xl;
 
 	@media (max-width: 1200px) {
-		font-size: $size-md;
+		font-size: $size-lg;
 	}
 
 	@media (max-width: 992px) {
-		font-size: $size-lg;
+		font-size: $size-md;
 	}
 
 	@media (max-width: 768px) {

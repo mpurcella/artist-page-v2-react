@@ -7,12 +7,10 @@ header {
 }
 
 .navbar {
-	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	padding: $spacer-xl $spacer-lg;
-	box-sizing: border-box;
-	transition: background-color 0.15s linear;
+	padding: $spacer-lg $spacer-lg;
+	transition: all 0.1s;
 
 	@media (max-width: 992px) {
 		display: flex;
@@ -25,26 +23,10 @@ header {
 	}
 
 	&-logo {
-		width: 300px;
-
-		@media (max-width: 1200px) {
-			width: 250px;
-		}
-
-		@media (max-width: 992px) {
-			width: 200px;
-		}
-
-		@media (max-width: 768px) {
-			width: 175px;
-		}
+		width: 175px;
 
 		@media (max-width: 576px) {
 			width: 125px;
-		}
-
-		@media (max-width: 320px) {
-			width: 115px;
 		}
 	}
 
@@ -54,7 +36,7 @@ header {
 
 		@media (max-width: 992px) {
 			width: 100vw;
-			height: 100vh;
+			min-height: 100vh;
 			background-color: $color-black;
 			display: flex;
 			flex-direction: column;
@@ -68,89 +50,6 @@ header {
 			&.active {
 				left: 0;
 				opacity: 1;
-			}
-		}
-
-		@media (max-width: 320px) {
-			top: 20px;
-		}
-
-		.nav-links {
-			&-list {
-				display: flex;
-				align-items: center;
-
-				@media (max-width: 992px) {
-					height: initial;
-					flex-direction: column;
-				}
-			}
-
-			&-item {
-				margin: 0 $spacer-md;
-				position: relative;
-
-				@media (max-width: 992px) {
-					margin: $spacer-md 0;
-				}
-			}
-
-			&-item:first-child {
-				margin-left: 0;
-			}
-
-			&-item:last-child {
-				margin-right: 0;
-			}
-
-			&-link {
-				font-size: $size-md;
-				color: $color-white;
-				font-weight: 300;
-				letter-spacing: 1.25px;
-				text-transform: uppercase;
-				text-decoration: none;
-				padding: $spacer-xxs 0;
-
-				&:hover {
-					font-weight: 700;
-				}
-
-				&.active {
-					color: $color-pink;
-				}
-
-				@media (max-width: 1200px) {
-					font-size: $size-sm;
-				}
-
-				@media (max-width: 992px) {
-					font-size: $size-xl * 1.5;
-					font-weight: 200;
-					text-align: center;
-					display: block;
-				}
-
-				@media (max-width: 768px) {
-					font-size: $size-xl * 1.25;
-				}
-
-				@media (max-width: 576px) {
-					font-size: $size-xl;
-				}
-
-				@media (max-width: 320px) {
-					font-size: $size-md;
-				}
-			}
-
-			.nav-link-dropdown-icon {
-				font-size: $size-xxs;
-				margin-left: $spacer-xxs;
-
-				@media (max-width: 992px) {
-					display: none;
-				}
 			}
 		}
 

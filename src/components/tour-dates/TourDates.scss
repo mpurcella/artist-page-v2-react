@@ -23,55 +23,77 @@
 		}
 
 		&-info {
-			width: 100%;
-			font-size: $size-md;
+			width: 85%;
 			text-transform: uppercase;
 			display: flex;
 			flex-wrap: wrap;
 
-			@media (max-width: 768px) {
-				font-size: $size-sm;
-			}
-
-			@media (max-width: 576px) {
-				font-size: $size-md;
-				text-align: center;
-			}
-
-			@media (max-width: 320px) {
-				font-size: $size-sm;
-			}
-
 			.tour-dates-date {
 				width: 100%;
-				margin: $spacer-xl 0 $spacer-md;
-			}
-
-			.tour-dates-venue {
-				width: 50%;
-				font-weight: 200;
+				font-family: 'Open Sans', sans-serif;
+				font-size: $size-lg;
+				font-weight: 500;
+				margin: $spacer-xl 0 $spacer-lg;
 
 				@media (max-width: 992px) {
-					width: 100%;
 					margin-bottom: $spacer-md;
+				}
+
+				@media (max-width: 768px) {
+					font-size: $size-md;
+				}
+
+				@media (max-width: 576px) {
+					width: 100%;
+					font-size: $size-lg;
+					text-align: center;
 				}
 			}
 
+			.tour-dates-venue,
 			.tour-dates-location {
 				width: 50%;
-				font-weight: 200;
+				font-size: $size-md;
+				font-weight: 300;
+				letter-spacing: 1.25px;
 				margin-bottom: $spacer-xl;
 
 				@media (max-width: 992px) {
 					width: 100%;
 				}
+
+				@media (max-width: 768px) {
+					font-size: $size-sm;
+				}
+
+				@media (max-width: 576px) {
+					width: 100%;
+					font-size: $size-md;
+					text-align: center;
+				}
+			}
+
+			.tour-dates-venue {
+				@media (max-width: 992px) {
+					margin-bottom: $spacer-md;
+				}
+			}
+
+			.tour-dates-location {
+				@media (max-width: 992px) {
+					margin-bottom: $spacer-xl;
+				}
 			}
 		}
 
 		.tour-dates-tickets-btn {
+			width: 15%;
 			display: flex;
+			justify-content: flex-end;
 
 			@media (max-width: 576px) {
+				width: 100%;
+				justify-content: center;
 				margin-bottom: $spacer-xl;
 			}
 		}

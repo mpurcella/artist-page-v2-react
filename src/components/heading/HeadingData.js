@@ -1,21 +1,38 @@
+let merchHeadingData = {
+	value: 'Merch',
+	className: 'merch-heading-text heading-text'
+};
+
 let subscribeHeadingData = {
 	value: 'Subscribe',
-	className: 'subscribe-heading heading'
+	className: 'subscribe-heading-text heading-text'
 };
 
 let storeHeadingData = {
-	value: 'Coming Soon!',
-	className: 'store-heading heading'
+	value: 'Store',
+	className: 'store-heading-text heading-text'
 };
 
-let audioCollectionHeadingData = {
-	value: 'Albums & EPs',
-	className: 'audio-collection-heading heading'
+let tourHeadingData = {
+	value: 'Tour Dates',
+	className: 'tour-heading-text heading-text'
 };
 
-let videoCollectionHeadingData = {
-	value: 'Music Videos',
-	className: 'video-collection-heading heading'
+let mediaHeadingData = {
+	value: 'Watch',
+	className: 'media-heading-text heading-text'
 };
 
-export { subscribeHeadingData, storeHeadingData, audioCollectionHeadingData, videoCollectionHeadingData };
+let contactHeadingData = {
+	value: 'Contact Us',
+	className: 'contact-heading-text heading-text'
+};
+
+export {
+	merchHeadingData,
+	subscribeHeadingData,
+	storeHeadingData,
+	tourHeadingData,
+	mediaHeadingData,
+	contactHeadingData
+};

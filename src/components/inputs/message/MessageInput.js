@@ -7,10 +7,11 @@ let MessageInput = (props) => {
 			name='message'
 			className='message-input'
 			id='messageInput'
+			placeholder='Message...'
 			required='required'
 			autoCorrect='off'
 			cols='30'
-			rows='12'
+			rows='1'
 			onChange={props.handleMessageChange}
 			value={props.messageState}
 		></textarea>

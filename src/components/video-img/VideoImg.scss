@@ -1,0 +1,206 @@
+@import '../../design-tokens/scss-variables';
+
+.video-images-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+		justify-content: unset;
+	}
+
+	@media (max-width: 992px) {
+		justify-content: center;
+	}
+
+	&-item {
+		width: 48%;
+		position: relative;
+		cursor: pointer;
+
+		&:hover {
+			.video-images-image-container {
+				box-shadow: 0px 0px 25px $color-pink;
+
+				@media (max-width: 576px) {
+					box-shadow: 0px 0px 20px $color-pink;
+				}
+
+				.video-image {
+					opacity: 1;
+				}
+
+				.video-images-play-btn-container {
+					opacity: 1;
+					visibility: visible;
+
+					@media (max-width: 992px) {
+						visibility: unset;
+						opacity: unset;
+					}
+
+					.video-image-play-btn {
+						@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+							color: $color-white;
+						}
+
+						@media (max-width: 992px) {
+							color: $color-white;
+						}
+					}
+				}
+			}
+
+			.video-images-info {
+				opacity: 0;
+				visibility: hidden;
+
+				@media (max-width: 992px) {
+					opacity: unset;
+					visibility: unset;
+				}
+			}
+		}
+
+		@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+			width: 100%;
+			margin-bottom: $spacer-xl * 4;
+		}
+
+		@media (max-width: 992px) {
+			width: 100%;
+			margin-bottom: $spacer-xl * 4;
+		}
+
+		.video-images-image-container {
+			background-color: $color-black;
+			border: 5px solid $color-pink;
+			box-sizing: border-box;
+			box-shadow: 0px 0px 25px transparentize($color-pink, 0.4);
+			transition: all 0.3s;
+			position: relative;
+
+			@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+				margin-bottom: $spacer-xl * 1.25;
+			}
+
+			@media (max-width: 992px) {
+				margin-bottom: $spacer-xl * 1.25;
+			}
+
+			@media (max-width: 576px) {
+				box-shadow: 0px 0px 20px transparentize($color-pink, 0.4);
+			}
+
+			.video-image {
+				width: 100%;
+				position: relative;
+				opacity: 0.5;
+				transition: all 0.3s;
+			}
+
+			.video-images-play-btn-container {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				top: 0;
+				left: 0;
+				visibility: hidden;
+				opacity: 0;
+				transition: all 0.3s;
+
+				@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+					visibility: visible;
+					opacity: 1;
+				}
+
+				@media (max-width: 992px) {
+					visibility: visible;
+					opacity: 1;
+				}
+
+				.video-image-play-btn {
+					font-size: $size-xl * 2;
+					transition: all 0.3s;
+
+					@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+						color: transparentize($color-white, 0.5);
+					}
+
+					@media (max-width: 992px) {
+						color: transparentize($color-white, 0.5);
+					}
+				}
+			}
+		}
+
+		.video-images-info {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			visibility: visible;
+			opacity: 1;
+			transition: all 0.3s;
+
+			@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+				height: unset;
+				position: relative;
+				top: unset;
+				left: unset;
+			}
+
+			@media (max-width: 992px) {
+				height: unset;
+				position: relative;
+				top: unset;
+				left: unset;
+			}
+
+			.video-image-title {
+				font-family: 'Open Sans', sans-serif;
+				font-size: $size-xl;
+				font-weight: 200;
+				text-transform: uppercase;
+				letter-spacing: 1.25px;
+
+				@media (max-width: 1200px) {
+					font-size: $size-lg;
+				}
+
+				@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+					font-size: $size-xl * 1.5;
+				}
+
+				@media (max-width: 992px) {
+					font-size: $size-xl;
+				}
+
+				@media (max-width: 768px) {
+					font-size: $size-lg;
+				}
+
+				@media (max-width: 576px) {
+					font-size: $size-md;
+				}
+			}
+		}
+	}
+
+	&-item:last-child {
+		@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+			margin-bottom: 0;
+		}
+
+		@media (max-width: 992px) {
+			margin-bottom: 0;
+		}
+	}
+}

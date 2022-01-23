@@ -25,17 +25,21 @@ let SubscribeForm = (props) => {
 
 	return (
 		<form className='artist-subscription-form'>
-			<EmailInputSubscribe
-				className='email-input email-input-subscribe'
-				emailState={email}
-				handleEmailChange={handleEmailChange}
-			/>
-			<Button
-				btnClassName={subscribeButtonData.className}
-				btnValue={subscribeButtonData.value}
-				btnType={subscribeButtonData.type}
-				handleSubmit={handleSubmit}
-			/>
+			<div className='artist-subscription-form-input'>
+				<EmailInputSubscribe
+					className='email-input email-input-subscribe'
+					emailState={email}
+					handleEmailChange={handleEmailChange}
+				/>
+			</div>
+			<div className='artist-subscription-form-btn'>
+				<Button
+					btnClassName={subscribeButtonData.className}
+					btnValue={subscribeButtonData.value}
+					btnType={subscribeButtonData.type}
+					handleSubmit={handleSubmit}
+				/>
+			</div>
 		</form>
 	);
 };

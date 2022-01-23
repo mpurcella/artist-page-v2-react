@@ -3,4 +3,9 @@ let subscribeSubheadingData = {
 	className: 'artist-subscription-subheading subheading'
 };
 
-export { subscribeSubheadingData };
+let contactSubheadingData = {
+	value: 'Want to get in contact with us? Just fill out the form below!',
+	className: 'contact-form-subheading subheading'
+};
+
+export { subscribeSubheadingData, contactSubheadingData };

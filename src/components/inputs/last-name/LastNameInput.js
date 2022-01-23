@@ -8,6 +8,7 @@ let LastNameInput = (props) => {
 			name='lastName'
 			className='last-name-input'
 			id='lastNameInput'
+			placeholder='Last Name'
 			autoCorrect='off'
 			onChange={props.handleLastNameChange}
 			value={props.lastNameState}

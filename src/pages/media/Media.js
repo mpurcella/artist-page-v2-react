@@ -1,5 +1,7 @@
 import React from 'react';
-import MediaLinks from '../../components/media-links/MediaLinks';
+import Heading from '../../components/heading/Heading';
+import { mediaHeadingData } from '../../components/heading/HeadingData';
+import VideoImg from '../../components/video-img/VideoImg';
 import Wrapper from '../../components/wrapper/Wrapper';
 import './Media.scss';
 
@@ -8,8 +10,16 @@ let Media = () => {
 		<main>
 			<div className='media'>
 				<Wrapper>
-					<div className='media-links'>
-						<MediaLinks className='media-links-list' />
+					<div className='media-container'>
+						<div className='media-heading'>
+							<Heading
+								headingClassName={mediaHeadingData.className}
+								headingValue={mediaHeadingData.value}
+							/>
+						</div>
+						<div className='video-images'>
+							<VideoImg />
+						</div>
 					</div>
 				</Wrapper>
 			</div>

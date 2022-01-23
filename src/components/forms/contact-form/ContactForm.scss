@@ -5,44 +5,40 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 
-	.first-name-input-container,
-	.last-name-input-container,
-	.email-input-container,
-	.subject-input-container,
-	.message-input-container {
-		display: flex;
-		flex-wrap: wrap;
-		margin-bottom: $spacer-xxl;
+	::-webkit-input-placeholder {
+		font-size: $size-md;
+
+		@media (max-width: 992px) {
+			font-size: $size-sm;
+		}
 
 		@media (max-width: 576px) {
-			margin-bottom: $spacer-xl;
+			font-size: $size-xs;
 		}
 	}
 
 	.first-name-input-container,
 	.last-name-input-container,
-	.email-input-container,
-	.subject-input-container {
-		width: 49%;
+	.email-input-container {
+		margin-bottom: $spacer-xl * 2;
+	}
+
+	.first-name-input-container,
+	.last-name-input-container {
+		width: 48%;
 
 		@media (max-width: 768px) {
 			width: 100%;
 		}
 	}
 
+	.email-input-container,
 	.message-input-container {
 		width: 100%;
 	}
 
-	.label-required {
-		font-size: $size-xs;
-		font-weight: 700;
-		color: $color-pink;
-		margin-left: $spacer-xxs;
-
-		@media (max-width: 1200px) {
-			font-size: $size-xxs;
-		}
+	.message-input-container {
+		margin-bottom: $spacer-xl * 3;
 	}
 
 	&-submit-btn {

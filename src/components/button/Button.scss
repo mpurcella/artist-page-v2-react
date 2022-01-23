@@ -1,14 +1,27 @@
 @import '../../design-tokens/scss-variables';
 
 .btn {
-	font-size: $size-md;
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: $size-lg;
 	text-transform: uppercase;
-	margin: 0 $spacer-xs;
+	color: $color-pink;
+	letter-spacing: 1.25px;
+	background-color: transparent;
 	padding: $spacer-sm $spacer-xxl;
+	border: 1px solid $color-pink;
 	transition: all 0.3s;
 
+	&:hover {
+		color: $color-white;
+		background-color: $color-pink;
+	}
+
 	@media (max-width: 1200px) {
-		font-size: $size-sm;
+		font-size: $size-md;
+	}
+
+	@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+		font-size: $size-lg;
 	}
 
 	@media (max-width: 992px) {
@@ -17,18 +30,14 @@
 
 	@media (max-width: 768px) {
 		width: 100%;
-		font-size: $size-sm;
 		margin: 0;
 	}
-}
 
-.btn-primary {
-	color: $color-pink;
-	background-color: transparent;
-	border: 1px solid $color-pink;
+	@media (max-width: 576px) {
+		font-size: $size-sm;
+	}
 
-	&:hover {
-		color: $color-white;
-		background-color: $color-pink;
+	@media (max-width: 375px) {
+		font-weight: 400;
 	}
 }

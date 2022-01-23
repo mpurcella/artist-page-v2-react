@@ -8,6 +8,7 @@ let EmailInputContact = (props) => {
 			name='emailContact'
 			className={props.className}
 			id='emailInputContact'
+			placeholder='Email Address'
 			required='required'
 			autoCorrect='off'
 			onChange={props.handleEmailChange}

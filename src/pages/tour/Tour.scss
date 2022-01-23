@@ -1,6 +1,10 @@
 @import '../../design-tokens/scss-variables';
 
 .tour-dates {
-	padding: $spacer-xl * 2 $spacer-md;
-	box-sizing: border-box;
+	padding: $spacer-xl * 3 $spacer-md;
+
+	&-heading {
+		text-align: center;
+		margin-bottom: $spacer-xl * 3;
+	}
 }

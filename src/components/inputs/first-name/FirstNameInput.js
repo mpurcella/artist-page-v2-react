@@ -8,6 +8,7 @@ let FirstNameInput = (props) => {
 			name='firstName'
 			className='first-name-input'
 			id='firstNameInput'
+			placeholder='First Name'
 			required='required'
 			autoCorrect='off'
 			onChange={props.handleFirstNameChange}

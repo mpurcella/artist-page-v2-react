@@ -9,8 +9,12 @@ let Footer = () => {
 		<footer>
 			<div className='footer'>
 				<div className='footer-nav'>
-					<Copyright copyrightClassName={copyrightData.className} copyrightValue={copyrightData.value} />
-					<Social className='nav-social-list footer-nav' />
+					<div className='footer-nav-copyright'>
+						<Copyright copyrightClassName={copyrightData.className} copyrightValue={copyrightData.value} />
+					</div>
+					<div className='footer-nav-social'>
+						<Social className='nav-social-list footer-social' />
+					</div>
 				</div>
 			</div>
 		</footer>

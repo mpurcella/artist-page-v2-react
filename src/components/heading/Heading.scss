@@ -1,36 +1,22 @@
 @import '../../design-tokens/scss-variables';
 
-.heading {
-	width: 100%;
+.heading-text {
 	font-family: 'Open Sans', sans-serif;
-	color: $color-white;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-align: center;
+	letter-spacing: 1.25px;
 }
 
-.subscribe-heading {
+.merch-heading-text,
+.subscribe-heading-text,
+.tour-heading-text,
+.store-heading-text,
+.media-heading-text,
+.contact-heading-text {
 	font-size: $size-xl * 2;
-	margin-bottom: $spacer-xl * 2.5;
 
-	@media (max-width: 1200px) {
+	@media (max-width: 992px) {
 		font-size: $size-xl * 1.75;
-	}
-
-	@media (max-width: 768px) {
-		font-size: $size-xl * 1.5;
-	}
-
-	@media (max-width: 576px) {
-		font-size: $size-xl * 1.25;
-	}
-}
-
-.store-heading {
-	font-size: $size-xl * 4;
-
-	@media (max-width: 1200px) {
-		font-size: $size-xl * 3;
 	}
 
 	@media (max-width: 768px) {
@@ -38,32 +24,17 @@
 	}
 
 	@media (max-width: 576px) {
-		font-size: $size-xl * 1.5;
+		font-size: $size-xl * 1.75;
 	}
 }
 
-.audio-collection-heading {
-	font-size: $size-xl * 2;
-	margin-bottom: $spacer-xl * 2.5;
-
-	@media (max-width: 576px) {
-		font-size: $size-xl * 1.75;
+.merch-heading-text,
+.subscribe-heading-text {
+	@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+		font-size: $size-xl * 2.25;
 	}
 
-	@media (max-width: 320px) {
-		font-size: $size-xl * 1.5;
-	}
-}
-
-.video-collection-heading {
-	font-size: $size-xl * 2;
-	margin-bottom: $spacer-xl * 2.5;
-
-	@media (max-width: 576px) {
-		font-size: $size-xl * 1.75;
-	}
-
-	@media (max-width: 320px) {
-		font-size: $size-xl * 1.5;
+	@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+		font-size: $size-xl * 2.25;
 	}
 }

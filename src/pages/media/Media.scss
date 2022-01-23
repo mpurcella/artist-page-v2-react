@@ -1,31 +1,33 @@
 @import '../../design-tokens/scss-variables';
 
 .media {
-	height: calc(100vh - 142.88px);
-	padding: $spacer-xl * 2 $spacer-md;
+	min-height: calc(100vh - 67.34px);
+	display: flex;
+	padding: $spacer-xl * 3 $spacer-md;
 	box-sizing: border-box;
 
 	@media (max-width: 1200px) {
-		height: calc(100vh - 135.06px);
+		min-height: calc(100vh - 67.34px);
 	}
 
 	@media (max-width: 992px) {
-		height: calc(100vh - 127.25px);
+		min-height: unset;
 	}
 
-	@media (max-width: 768px) {
-		height: calc(100vh - 121.34px);
-	}
-
-	@media (max-width: 576px) {
-		height: calc(100vh - 119px);
-	}
-
-	@media (max-width: 320px) {
-		height: calc(100vh - 117px);
-	}
-
-	&-links {
+	&-container {
 		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.video-images {
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&-heading {
+		margin-bottom: $spacer-xl * 3;
 	}
 }

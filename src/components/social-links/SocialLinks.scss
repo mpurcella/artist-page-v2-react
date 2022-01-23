@@ -12,7 +12,7 @@
 	}
 }
 
-.header-nav {
+.header-social {
 	.nav-social-item {
 		margin: 0 $spacer-xs;
 
@@ -23,7 +23,7 @@
 
 	.nav-social-link {
 		font-size: $size-xxl;
-		color: $color-grey;
+		color: $color-dark-grey;
 
 		&:hover {
 			color: $color-white;
@@ -47,12 +47,27 @@
 	}
 }
 
-.footer {
+.footer-social {
+	@media (max-width: 768px) {
+		margin-bottom: $spacer-xxl;
+	}
+
+	.nav-social-list {
+		@media (max-width: 768px) {
+			order: 1;
+			flex-direction: row;
+		}
+	}
+
 	.nav-social-item {
 		margin-left: $spacer-lg;
 
 		@media (max-width: 992px) {
 			margin-left: $spacer-md;
+		}
+
+		@media (max-width: 768px) {
+			margin: 0 $spacer-md;
 		}
 	}
 
@@ -64,12 +79,20 @@
 			color: $color-white;
 		}
 
+		@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+			font-size: $size-xxl;
+		}
+
+		@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+			font-size: $size-xxl;
+		}
+
 		@media (max-width: 768px) {
-			font-size: $size-sm;
+			font-size: $size-xxl;
 		}
 
 		@media (max-width: 320px) {
-			font-size: $size-xs;
+			font-size: $size-xl;
 		}
 	}
 }

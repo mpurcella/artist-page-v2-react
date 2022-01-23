@@ -1,10 +1,19 @@
+@import '../../../design-tokens/scss-variables';
+
 .artist-subscription-form {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 
 	@media (max-width: 768px) {
 		flex-direction: column;
+	}
+
+	&-input {
+		margin-right: $spacer-lg;
+
+		@media (max-width: 768px) {
+			margin: 0 0 $spacer-xl 0;
+		}
 	}
 }
