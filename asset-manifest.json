@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/artist-page-v2-react/static/css/main.1fda1763.css",
-    "main.js": "/artist-page-v2-react/static/js/main.ab250899.js",
+    "main.css": "/artist-page-v2-react/static/css/main.bc76c33c.css",
+    "main.js": "/artist-page-v2-react/static/js/main.46a2275f.js",
+    "static/media/pink-vinyl.png": "/artist-page-v2-react/static/media/pink-vinyl.21c0228d2d684b365764.png",
+    "static/media/purple-vinyl.png": "/artist-page-v2-react/static/media/purple-vinyl.fe931308d9e6fb47ea6e.png",
+    "static/media/blue-vinyl.png": "/artist-page-v2-react/static/media/blue-vinyl.d41d19ef08c4873030bb.png",
+    "static/media/clear-vinyl.png": "/artist-page-v2-react/static/media/clear-vinyl.45dc35482b301c22bc17.png",
     "static/media/album-cover.png": "/artist-page-v2-react/static/media/album-cover.c9264f6e5baf823f3ba1.png",
-    "static/media/album-cover-3.png": "/artist-page-v2-react/static/media/album-cover-3.7d60949b9544b85bc1cd.png",
-    "static/media/album-cover-5.png": "/artist-page-v2-react/static/media/album-cover-5.8c369dba00ab55ddac32.png",
-    "static/media/album-cover-6.png": "/artist-page-v2-react/static/media/album-cover-6.eb2f2ed723a1f651edf6.png",
-    "static/media/album-cover-2.png": "/artist-page-v2-react/static/media/album-cover-2.1b3b78a33928fb079cde.png",
-    "static/media/album-cover-4.png": "/artist-page-v2-react/static/media/album-cover-4.0001ac6d5958c0bed66c.png",
+    "static/media/video-img.png": "/artist-page-v2-react/static/media/video-img.3197dd965d335263166e.png",
+    "static/media/video-img-2.png": "/artist-page-v2-react/static/media/video-img-2.64fb04f93289bc2bca79.png",
+    "static/media/t-shirt-2.png": "/artist-page-v2-react/static/media/t-shirt-2.40f0e03ed5b55988ca00.png",
+    "static/media/t-shirt-1.png": "/artist-page-v2-react/static/media/t-shirt-1.78d28341f9868ac26cac.png",
+    "static/media/t-shirt-3.png": "/artist-page-v2-react/static/media/t-shirt-3.fd0ff15963c49e0090b8.png",
+    "static/media/black-shorts.png": "/artist-page-v2-react/static/media/black-shorts.74e5106e7a2cb7c2ee55.png",
     "static/media/street.jpeg": "/artist-page-v2-react/static/media/street.02b8d55623d2c6e46c89.jpeg",
     "static/media/artist-logo.png": "/artist-page-v2-react/static/media/artist-logo.473645f7a865a12bbbbe.png",
     "index.html": "/artist-page-v2-react/index.html",
-    "main.1fda1763.css.map": "/artist-page-v2-react/static/css/main.1fda1763.css.map",
-    "main.ab250899.js.map": "/artist-page-v2-react/static/js/main.ab250899.js.map"
+    "main.bc76c33c.css.map": "/artist-page-v2-react/static/css/main.bc76c33c.css.map",
+    "main.46a2275f.js.map": "/artist-page-v2-react/static/js/main.46a2275f.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fda1763.css",
-    "static/js/main.ab250899.js"
+    "static/css/main.bc76c33c.css",
+    "static/js/main.46a2275f.js"
   ]
 }
