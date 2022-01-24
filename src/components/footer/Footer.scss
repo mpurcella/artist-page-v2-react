@@ -6,19 +6,23 @@
 
 	&-nav {
 		display: flex;
-		justify-content: center;
+		justify-content: space-evenly;
 		align-items: center;
 
-		@media (max-width: 768px) {
+		@media (max-width: 992px) {
 			flex-direction: column;
 		}
 
 		&-copyright {
-			margin-right: $spacer-xl * 2;
-
-			@media (max-width: 768px) {
-				margin-right: 0;
+			@media (max-width: 992px) {
 				order: 2;
+			}
+		}
+
+		&-social {
+			@media (max-width: 992px) {
+				margin-bottom: $spacer-xxl;
+				order: 1;
 			}
 		}
 	}

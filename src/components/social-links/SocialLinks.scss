@@ -48,13 +48,8 @@
 }
 
 .footer-social {
-	@media (max-width: 768px) {
-		margin-bottom: $spacer-xxl;
-	}
-
 	.nav-social-list {
-		@media (max-width: 768px) {
-			order: 1;
+		@media (max-width: 992px) {
 			flex-direction: row;
 		}
 	}
@@ -63,10 +58,6 @@
 		margin-left: $spacer-lg;
 
 		@media (max-width: 992px) {
-			margin-left: $spacer-md;
-		}
-
-		@media (max-width: 768px) {
 			margin: 0 $spacer-md;
 		}
 	}
@@ -87,7 +78,7 @@
 			font-size: $size-xxl;
 		}
 
-		@media (max-width: 768px) {
+		@media (max-width: 992px) {
 			font-size: $size-xxl;
 		}
 

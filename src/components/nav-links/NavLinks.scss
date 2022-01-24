@@ -8,6 +8,14 @@
 		@media (max-width: 992px) {
 			height: initial;
 			flex-direction: column;
+
+			@media screen and (orientation: landscape) {
+				flex-direction: row;
+
+				.nav-links-item {
+					margin: 0 $spacer-xl;
+				}
+			}
 		}
 	}
 

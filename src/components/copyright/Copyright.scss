@@ -13,8 +13,4 @@
 	@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
 		font-size: $size-xl;
 	}
-
-	@media (max-width: 768px) {
-		order: 2;
-	}
 }

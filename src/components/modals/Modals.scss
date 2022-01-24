@@ -89,10 +89,18 @@
 			padding-bottom: 60%;
 		}
 
+		@media only screen and (max-width: 992px) and (orientation: landscape) {
+			padding-bottom: 45%;
+		}
+
 		@media (max-width: 576px) {
 			padding-bottom: 65%;
 			box-shadow: -5px 0px 15px -5px $color-pink, 0px -10px 15px -10px $color-pink, 5px 0px 15px -5px $color-pink,
 				0px 5px 15px -5px $color-pink;
+		}
+
+		@media only screen and (max-width: 576px) and (orientation: landscape) {
+			padding-bottom: 45%;
 		}
 	}
 }

@@ -20,7 +20,7 @@ let Navbar = () => {
 	};
 
 	let showNavBackground = () => {
-		if (window.scrollY >= 10) {
+		if (window.scrollY > 0) {
 			setNavBackground(true);
 		} else {
 			setNavBackground(false);
