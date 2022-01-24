@@ -2,7 +2,7 @@
 
 .footer {
 	background-color: $color-trans-black;
-	padding: $spacer-lg $spacer-md $spacer-sm;
+	padding: $spacer-xl * 2 $spacer-md $spacer-md;
 
 	&-subscribe {
 		margin-bottom: $spacer-xl;
