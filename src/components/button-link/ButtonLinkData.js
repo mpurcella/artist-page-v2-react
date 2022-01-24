@@ -13,16 +13,6 @@ let buttonLinkData = [
 		value: 'Tickets',
 		link: '#',
 		className: 'btn-link btn-link-secondary'
-	},
-	{
-		value: 'Download',
-		link: '#',
-		className: 'btn-link btn-link-primary'
-	},
-	{
-		value: 'Buy',
-		link: '#',
-		className: 'btn-link btn-link-tertiary'
 	}
 ];
 

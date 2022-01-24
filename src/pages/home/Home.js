@@ -23,10 +23,7 @@ let Home = () => {
 					<div className='album-release-container'>
 						<div className='album-release-info'>
 							<div className='album-release-title'>
-								<AlbumTitle
-									albumTitleClassName='album-title home-title'
-									albumTitleValue={albumTitleData.value}
-								/>
+								<AlbumTitle albumTitleClassName='album-title' albumTitleValue={albumTitleData.value} />
 							</div>
 							<div className='album-release-description'>
 								<AlbumDescription
@@ -50,7 +47,7 @@ let Home = () => {
 						<div className='album-release-img'>
 							<div className='album-img-container'>
 								<AlbumImg
-									albumImgClassName='album-img home-img'
+									albumImgClassName='album-img'
 									albumImgSrc={albumImgData.src}
 									albumImgAlt={albumImgData.alt}
 								/>

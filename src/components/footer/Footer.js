@@ -1,4 +1,5 @@
 import React from 'react';
+import Subscribe from '../subscribe/Subscribe';
 import Copyright from '../copyright/Copyright';
 import { copyrightData } from '../copyright/CopyrightData';
 import Social from '../social-links/SocialLinks';
@@ -8,6 +9,9 @@ let Footer = () => {
 	return (
 		<footer>
 			<div className='footer'>
+				<div className='footer-subscribe'>
+					<Subscribe />
+				</div>
 				<div className='footer-nav'>
 					<div className='footer-nav-copyright'>
 						<Copyright copyrightClassName={copyrightData.className} copyrightValue={copyrightData.value} />

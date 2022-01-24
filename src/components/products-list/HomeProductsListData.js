@@ -7,6 +7,7 @@ let homeProductsListData = [
 	{
 		name: 'The Unknown',
 		description: 'Vinyl - Transparent Blue',
+		alt: 'The Unknown - Vinyl - Transparent Blue',
 		price: 30,
 		src: blueVinyl,
 		link: '#',
@@ -15,6 +16,7 @@ let homeProductsListData = [
 	{
 		name: 'The Unknown',
 		description: 'Vinyl - Transparent Pink',
+		alt: 'The Unknown - Vinyl - Transparent Pink',
 		price: 30,
 		src: pinkVinyl,
 		link: '#',
@@ -23,6 +25,7 @@ let homeProductsListData = [
 	{
 		name: 'Heart Line Logo Tee',
 		description: 'T-Shirt - White',
+		alt: 'Heart Line Logo Tee - White',
 		price: 28,
 		src: whiteTee,
 		link: '#',
@@ -31,6 +34,7 @@ let homeProductsListData = [
 	{
 		name: 'Heart Line Logo Shorts',
 		description: 'Mesh Shorts - Black',
+		alt: 'Heart Line Logo Shorts - Black',
 		price: 25,
 		src: blackShorts,
 		link: '#',

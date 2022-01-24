@@ -5,16 +5,16 @@
 		display: flex;
 		align-items: center;
 
-		@media (max-width: 992px) {
-			height: initial;
+		@media screen and (min-height: 500px) and (max-width: 992px) {
 			flex-direction: column;
+		}
 
-			@media screen and (orientation: landscape) {
-				flex-direction: row;
+		@media screen and (max-height: 500px) and (max-width: 992px) {
+			flex-direction: row;
+			margin-top: $spacer-lg * 1.5;
 
-				.nav-links-item {
-					margin: 0 $spacer-xl;
-				}
+			.nav-links-item {
+				margin: 0 $spacer-lg;
 			}
 		}
 	}

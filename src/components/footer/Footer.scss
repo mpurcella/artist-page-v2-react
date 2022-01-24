@@ -4,9 +4,13 @@
 	background-color: $color-trans-black;
 	padding: $spacer-lg $spacer-md $spacer-sm;
 
+	&-subscribe {
+		margin-bottom: $spacer-xl;
+	}
+
 	&-nav {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: center;
 
 		@media (max-width: 992px) {

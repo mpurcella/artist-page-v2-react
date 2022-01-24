@@ -1,12 +1,9 @@
 @import '../../design-tokens/scss-variables';
 
 .album-title {
+	font-size: $size-xl * 2.5;
 	font-weight: 700;
 	letter-spacing: 1.25px;
-}
-
-.home-title {
-	font-size: $size-xl * 2.5;
 
 	@media (max-width: 1200px) {
 		font-size: $size-xl * 2.25;
@@ -34,29 +31,5 @@
 
 	@media (max-width: 320px) {
 		font-size: $size-xl * 1.75;
-	}
-}
-
-.media-title {
-	font-size: $size-xl * 2.25;
-
-	@media (max-width: 1200px) {
-		font-size: $size-xl * 2;
-	}
-
-	@media (max-width: 992px) {
-		font-size: $size-xl * 1.5;
-	}
-
-	@media (max-width: 768px) {
-		font-size: $size-xl * 2;
-	}
-
-	@media (max-width: 576px) {
-		font-size: $size-xl * 1.75;
-	}
-
-	@media (max-width: 320px) {
-		font-size: $size-xl * 1.25;
 	}
 }

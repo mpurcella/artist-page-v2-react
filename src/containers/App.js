@@ -8,7 +8,6 @@ import Store from '../pages/store/Store';
 import { Routes, Route } from 'react-router-dom';
 import Footer from '../components/footer/Footer';
 import Hero from '../components/hero/Hero';
-import Subscribe from '../components/subscribe/Subscribe';
 import ScrollToTop from '../components/scroll-to-top/ScrollToTop';
 
 let App = () => {
@@ -24,7 +23,6 @@ let App = () => {
 				<Route path='/media' element={<Media />} />
 				<Route path='/contact' element={<Contact />} />
 			</Routes>
-			<Subscribe />
 			<Footer />
 		</>
 	);
