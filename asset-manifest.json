@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/artist-page-v2-react/static/css/main.47f1051b.css",
-    "main.js": "/artist-page-v2-react/static/js/main.09cb5955.js",
+    "main.js": "/artist-page-v2-react/static/js/main.32a9a8bf.js",
     "static/media/pink-vinyl.png": "/artist-page-v2-react/static/media/pink-vinyl.21c0228d2d684b365764.png",
     "static/media/purple-vinyl.png": "/artist-page-v2-react/static/media/purple-vinyl.fe931308d9e6fb47ea6e.png",
     "static/media/blue-vinyl.png": "/artist-page-v2-react/static/media/blue-vinyl.d41d19ef08c4873030bb.png",
@@ -17,10 +17,10 @@
     "static/media/artist-logo.png": "/artist-page-v2-react/static/media/artist-logo.473645f7a865a12bbbbe.png",
     "index.html": "/artist-page-v2-react/index.html",
     "main.47f1051b.css.map": "/artist-page-v2-react/static/css/main.47f1051b.css.map",
-    "main.09cb5955.js.map": "/artist-page-v2-react/static/js/main.09cb5955.js.map"
+    "main.32a9a8bf.js.map": "/artist-page-v2-react/static/js/main.32a9a8bf.js.map"
   },
   "entrypoints": [
     "static/css/main.47f1051b.css",
-    "static/js/main.09cb5955.js"
+    "static/js/main.32a9a8bf.js"
   ]
 }
