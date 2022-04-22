@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/artist-page-v2-react/static/css/main.47f1051b.css",
-    "main.js": "/artist-page-v2-react/static/js/main.32a9a8bf.js",
+    "main.css": "/artist-page-v2-react/static/css/main.44d3b6f7.css",
+    "main.js": "/artist-page-v2-react/static/js/main.a5ea0eb9.js",
     "static/media/pink-vinyl.png": "/artist-page-v2-react/static/media/pink-vinyl.21c0228d2d684b365764.png",
     "static/media/purple-vinyl.png": "/artist-page-v2-react/static/media/purple-vinyl.fe931308d9e6fb47ea6e.png",
     "static/media/blue-vinyl.png": "/artist-page-v2-react/static/media/blue-vinyl.d41d19ef08c4873030bb.png",
@@ -16,11 +16,11 @@
     "static/media/street.jpeg": "/artist-page-v2-react/static/media/street.02b8d55623d2c6e46c89.jpeg",
     "static/media/artist-logo.png": "/artist-page-v2-react/static/media/artist-logo.473645f7a865a12bbbbe.png",
     "index.html": "/artist-page-v2-react/index.html",
-    "main.47f1051b.css.map": "/artist-page-v2-react/static/css/main.47f1051b.css.map",
-    "main.32a9a8bf.js.map": "/artist-page-v2-react/static/js/main.32a9a8bf.js.map"
+    "main.44d3b6f7.css.map": "/artist-page-v2-react/static/css/main.44d3b6f7.css.map",
+    "main.a5ea0eb9.js.map": "/artist-page-v2-react/static/js/main.a5ea0eb9.js.map"
   },
   "entrypoints": [
-    "static/css/main.47f1051b.css",
-    "static/js/main.32a9a8bf.js"
+    "static/css/main.44d3b6f7.css",
+    "static/js/main.a5ea0eb9.js"
   ]
 }
