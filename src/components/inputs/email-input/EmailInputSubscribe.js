@@ -10,6 +10,8 @@ let EmailInputSubscribe = (props) => {
 			id='emailInputSubscribe'
 			placeholder='Email Address'
 			required='required'
+			aria-required='true'
+			aria-label='Email Address'
 			autoCorrect='off'
 			onChange={props.handleEmailChange}
 			value={props.emailState}

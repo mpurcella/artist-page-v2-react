@@ -9,6 +9,8 @@ let MessageInput = (props) => {
 			id='messageInput'
 			placeholder='Message...'
 			required='required'
+			aria-required='true'
+			aria-label='Message'
 			autoCorrect='off'
 			cols='30'
 			rows='1'

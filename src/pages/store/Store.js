@@ -9,29 +9,31 @@ import './Store.scss';
 let Store = () => {
 	return (
 		<main>
-			<div className='store'>
-				<Wrapper>
-					<div className='store-container'>
-						<div className='store-heading'>
-							<Heading
-								headingClassName={storeHeadingData.className}
-								headingValue={storeHeadingData.value}
-							/>
+			<section>
+				<div className='store'>
+					<Wrapper>
+						<div className='store-container'>
+							<div className='store-heading'>
+								<Heading
+									headingClassName={storeHeadingData.className}
+									headingValue={storeHeadingData.value}
+								/>
+							</div>
+							<div className='store-products'>
+								<Products
+									productListData={storeProductsListData}
+									productsList={'products-list store-products-list'}
+									productsListItem={'products-list-item store-products-list-item'}
+									productsListItemInfo={'products-list-item-info store-products-list-item-info'}
+									productsName={'products-name store-products-name'}
+									productsDescription={'products-description store-products-description'}
+									productsPrice={'products-price store-products-price'}
+								/>
+							</div>
 						</div>
-						<div className='store-products'>
-							<Products
-								productListData={storeProductsListData}
-								productsList={'products-list store-products-list'}
-								productsListItem={'products-list-item store-products-list-item'}
-								productsListItemInfo={'products-list-item-info store-products-list-item-info'}
-								productsName={'products-name store-products-name'}
-								productsDescription={'products-description store-products-description'}
-								productsPrice={'products-price store-products-price'}
-							/>
-						</div>
-					</div>
-				</Wrapper>
-			</div>
+					</Wrapper>
+				</div>
+			</section>
 		</main>
 	);
 };

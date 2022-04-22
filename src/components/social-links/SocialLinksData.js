@@ -4,27 +4,32 @@ let socialLinksData = [
 	{
 		icon: <FaFacebookF />,
 		id: 1,
-		link: '#'
+		link: '#',
+		ariaLabel: 'Facebook'
 	},
 	{
 		icon: <FaInstagram />,
 		id: 2,
-		link: '#'
+		link: '#',
+		ariaLabel: 'Instagram'
 	},
 	{
 		icon: <FaYoutube />,
 		id: 3,
-		link: '#'
+		link: '#',
+		ariaLabel: 'Youtube'
 	},
 	{
 		icon: <FaTwitter />,
 		id: 4,
-		link: '#'
+		link: '#',
+		ariaLabel: 'Twitter'
 	},
 	{
 		icon: <FaBandcamp />,
 		id: 5,
-		link: '#'
+		link: '#',
+		ariaLabel: 'Bandcamp'
 	}
 ];
 

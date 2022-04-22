@@ -8,7 +8,7 @@ let Social = (props) => {
 			{socialLinksData.map((data) => {
 				return (
 					<li className='nav-social-item' key={data.id}>
-						<a href={data.link} className='nav-social-link'>
+						<a href={data.link} className='nav-social-link' aria-label={data.ariaLabel}>
 							{data.icon}
 						</a>
 					</li>

@@ -8,19 +8,21 @@ import './Tour.scss';
 let Tour = () => {
 	return (
 		<main>
-			<div className='tour-dates'>
-				<Wrapper>
-					<div className='tour-dates-container'>
-						<div className='tour-dates-heading'>
-							<Heading
-								headingClassName={tourHeadingData.className}
-								headingValue={tourHeadingData.value}
-							/>
+			<section>
+				<div className='tour-dates'>
+					<Wrapper>
+						<div className='tour-dates-container'>
+							<div className='tour-dates-heading'>
+								<Heading
+									headingClassName={tourHeadingData.className}
+									headingValue={tourHeadingData.value}
+								/>
+							</div>
+							<TourDates />
 						</div>
-						<TourDates />
-					</div>
-				</Wrapper>
-			</div>
+					</Wrapper>
+				</div>
+			</section>
 		</main>
 	);
 };

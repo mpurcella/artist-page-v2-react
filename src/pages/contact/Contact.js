@@ -17,38 +17,40 @@ let Contact = () => {
 
 	return (
 		<main>
-			<div className='contact'>
-				<Wrapper>
-					<div className='contact-container'>
-						<div className='contact-heading'>
-							<Heading
-								headingClassName={contactHeadingData.className}
-								headingValue={contactHeadingData.value}
-							/>
+			<section>
+				<div className='contact'>
+					<Wrapper>
+						<div className='contact-container'>
+							<div className='contact-heading'>
+								<Heading
+									headingClassName={contactHeadingData.className}
+									headingValue={contactHeadingData.value}
+								/>
+							</div>
+							<div className='contact-subheading'>
+								<Subheading
+									subheadingClassName={contactSubheadingData.className}
+									subheadingValue={contactSubheadingData.value}
+								/>
+							</div>
+							<div className='contact-form-container'>
+								<ContactForm handleClick={handleClick} />
+							</div>
+							<TextModal
+								modalClassName='modal contact-modal'
+								modalBtnClassName='modal-close-btn'
+								isModalOpen={isModalOpen}
+								handleClick={handleClick}
+							>
+								<p className='modal-text'>
+									Message received! Please allow 24-48 hours for us to review and respond to your
+									message. Thank You.
+								</p>
+							</TextModal>
 						</div>
-						<div className='contact-subheading'>
-							<Subheading
-								subheadingClassName={contactSubheadingData.className}
-								subheadingValue={contactSubheadingData.value}
-							/>
-						</div>
-						<div className='contact-form-container'>
-							<ContactForm handleClick={handleClick} />
-						</div>
-						<TextModal
-							modalClassName='modal contact-modal'
-							modalBtnClassName='modal-close-btn'
-							isModalOpen={isModalOpen}
-							handleClick={handleClick}
-						>
-							<p className='modal-text'>
-								Message received! Please allow 24-48 hours for us to review and respond to your message.
-								Thank You.
-							</p>
-						</TextModal>
-					</div>
-				</Wrapper>
-			</div>
+					</Wrapper>
+				</div>
+			</section>
 		</main>
 	);
 };

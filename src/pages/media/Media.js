@@ -8,21 +8,23 @@ import './Media.scss';
 let Media = () => {
 	return (
 		<main>
-			<div className='media'>
-				<Wrapper>
-					<div className='media-container'>
-						<div className='media-heading'>
-							<Heading
-								headingClassName={mediaHeadingData.className}
-								headingValue={mediaHeadingData.value}
-							/>
+			<section>
+				<div className='media'>
+					<Wrapper>
+						<div className='media-container'>
+							<div className='media-heading'>
+								<Heading
+									headingClassName={mediaHeadingData.className}
+									headingValue={mediaHeadingData.value}
+								/>
+							</div>
+							<div className='video-images'>
+								<VideoImg />
+							</div>
 						</div>
-						<div className='video-images'>
-							<VideoImg />
-						</div>
-					</div>
-				</Wrapper>
-			</div>
+					</Wrapper>
+				</div>
+			</section>
 		</main>
 	);
 };

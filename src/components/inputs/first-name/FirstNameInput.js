@@ -10,6 +10,8 @@ let FirstNameInput = (props) => {
 			id='firstNameInput'
 			placeholder='First Name'
 			required='required'
+			aria-required='true'
+			aria-label='First Name'
 			autoCorrect='off'
 			onChange={props.handleFirstNameChange}
 			value={props.firstNameState}
